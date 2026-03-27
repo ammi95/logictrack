@@ -7,39 +7,98 @@
     <title>Contact</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
+        rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
-    <header class="header">
-        <div class="nav-container">
+    <header>
+        <div class="top-strip">
+            <div class="container-fluid">
+                <div class="flex">
+                    <div class="col1">
+                        <div class="nav-text left-side">
+                            <ul>
+                                <li><a href="mailto:info@tradeshipinc.com">info@logictrack.com</a></li>
+                                <li><a href="tel:+1(631)3935134">+1 (631) 393 5134</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col2">
+                        <div class="right-side">
+                            <!-- Location -->
 
-            <!-- Logo -->
-            <div class="logo"><a href="/"><img src="images/HealthSynch.png" alt=""></a></div>
+                            <!-- Social Links -->
 
-            <!-- Nav Links -->
-            <nav class="nav-links" id="navLinks">
-                <a href="/#features">Features</a>
-                <a href="/#security">Security</a>
-                <a href="/#clinics">For Clinics</a>
-                <a href="contact.html">contact-us</a>
-            </nav>
-
-            <!-- Right Actions -->
-            <div class="nav-actions">
-                <a href="login.html" class="login"><i class="fa-solid fa-user"></i></a>
-                <a href="javascript:void(0)" class="btn" id="openDemo">Book Demo</a>
+                            <!-- Request Demo -->
+                            <div class="nav-text demo-link"><a href="" class="model-open openDemo"><span>Request a
+                                        Demo</span></a></div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="header-wrapper">
+            <div class="container-fluid">
+                <div class="flex">
+                    <div class="col1">
+                        <div class="custom-logo"><a href="/"><img src="images/logic.png" alt="Trade Ship"></a>
+                        </div>
+                    </div>
+                    <div class="menu-trigger model-open" data-model=".model-navigaition">
+                        <span></span>
+                    </div>
+                    <div class="col2">
+                        <div class="custom-nav nav-text">
+                            <ul>
+                                <li class="has-dropdown"><a href="/#features">Features</a>
+                                </li>
+                                <li class="has-dropdown">
+                                    <a href="/#solution">Solutions</a>
 
-            <!-- Hamburger -->
-            <div class="menu-toggle" id="menuToggle">
-                <span></span>
-                <span></span>
-                <span></span>
+                                </li>
+                                <li class="has-dropdown">
+                                    <a href="/#how-it-works">How it works</a>
+
+                                </li>
+
+                                <li><a href="/#showcase">Dashboard</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </div>
     </header>
+    <!-- End Header -->
+    <!-- navigation Model -->
+    <div class="model modelPop model-navigaition">
+        <div class="close close_model"><i class="fas-solid fa fa-close"></i></div>
+        <div class="model-body">
+            <div class="navigation">
+                <ul>
+                    <li class="has-dropdown"><a href="/#features">Features</a>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="/#solution">Solutions</a>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="/#showcase">Dashboard</a>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="/#how-it-works">How it works</a>
+                    </li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <section class="contact">
         <div class="contact-container">
 
@@ -92,41 +151,60 @@
         </div>
     </section>
     <footer class="footer">
-        <div class="footer-container">
+        <div class="container footer-grid">
 
-            <!-- Column 1 -->
+            <!-- LOGO + ABOUT -->
             <div class="footer-col">
-                <h4>Product</h4>
-                <a href="/#features">Features</a>
-                <a href="/#security">Security</a>
+                <h2 class="logo"><a href="/"><img src="images/logic.png" alt=""></a></h2>
+                <p>
+                    LogixTrack helps logistics companies track, optimize, and automate fleet operations in real time.
+                </p>
             </div>
 
-            <!-- Column 2 -->
+            <!-- QUICK LINKS -->
             <div class="footer-col">
-                <h4>Company</h4>
-                <a href="contact.html">Contact</a>
-                <a href="/#clinics">Clinics</a>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/#features">Features</a></li>
+                    <li><a href="/#solution">Solution</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </div>
 
-            <!-- Column 3 -->
+            <!-- PRODUCT -->
             <div class="footer-col">
-                <h4>Resources</h4>
-                <a href="contact.html">Docs</a>
-                <a href="contact.html">Help Center</a>
+                <h3>Product</h3>
+                <ul>
+                    <li><a href="/#showcase">Fleet Tracking</a></li>
+                    <li><a href="/#showcase">Route Optimization</a></li>
+                    <li><a href="/#showcase">Driver App</a></li>
+                </ul>
             </div>
 
-            <!-- Column 4 -->
+            <!-- SUPPORT -->
             <div class="footer-col">
-                <h4>Legal</h4>
-                <a href="contact.html">Privacy Policy</a>
-                <a href="contact.html">Terms</a>
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="contact.html">Help Center</a></li>
+                    <li><a href="contact.html">Documentation</a></li>
+                    <!-- <li><a href="#">API Access</a></li> -->
+                </ul>
+            </div>
+            <!-- CONTACT -->
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <p>📍 New Delhi, India</p>
+                <p>📧 support@logixtrack.com</p>
+                <p>📞 +91 98765 43210</p>
             </div>
 
         </div>
 
-        <!-- Bottom -->
+        <!-- BOTTOM BAR -->
         <div class="footer-bottom">
-            © 2026 HealthSynch. All rights reserved.
+            <p>© 2026 LogixTrack. All rights reserved.</p>
         </div>
     </footer>
     <div class="demo-overlay" id="demoOverlay"></div>
@@ -164,62 +242,57 @@
 
     </div>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const toggle = document.getElementById("menuToggle");
-            const nav = document.getElementById("navLinks");
-
-            toggle.addEventListener("click", () => {
-                nav.classList.toggle("active");
-                // overlay.classList.remove("active");
-            });
-            const navLinksItems = document.querySelectorAll(".nav-links a");
-            const navlink = document.getElementById("navLinks");
-
-            // Close menu on link click
-            navLinksItems.forEach(link => {
-                link.addEventListener("click", () => {
-                    navlink.classList.remove("active");
-                });
-            });
-            const openBtn = document.getElementById("openDemo");
-            const closeBtn = document.getElementById("closeDemo");
-            const popup = document.getElementById("demoPopup");
-            const overlay = document.getElementById("demoOverlay");
-
-            openBtn.addEventListener("click", (e) => {
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                scroltop = $(this).scrollTop()
+                if (scroltop > ($(window).height()) / 100) {
+                    $('header').addClass("header-fixed");
+                } else {
+                    $('header').removeClass("header-fixed")
+                }
+            })
+             $('.model-open').on('click', function (e) {
                 e.preventDefault();
-                popup.classList.add("active");
-                overlay.classList.add("active");
+                var model = $(this).attr('data-model')
+                $('.model').removeClass('is-open');
+                $('.overlay').addClass('active_overla');
+                $(model).addClass('is-open');
+            })
+            $('.close_model,.overlay').on('click', function () {
+                $('.model').removeClass('is-open');
+                $('.overlay').removeClass('active_overla');
+            })
+
+            $('.openDemo').on('click', function (e) {
+                e.preventDefault();
+                $('#demoPopup').addClass('active');
+                $('#demoOverlay').addClass('active');
             });
 
-            const closePopup = () => {
-                popup.classList.remove("active");
-                overlay.classList.remove("active");
-            };
+            // CLOSE POPUP
+            function closePopup() {
+                $('#demoPopup').removeClass('active');
+                $('#demoOverlay').removeClass('active');
+            }
 
-            closeBtn.addEventListener("click", closePopup);
-            overlay.addEventListener("click", closePopup);
+            $('#closeDemo, #demoOverlay').on('click', function () {
+                closePopup();
+            });
 
-            const form = document.getElementById("demoForm");
-            const successMsg = document.getElementById("successMsg");
-
-            form.addEventListener("submit", function (e) {
-                // alert('jsduhucid')
+            // FORM SUBMIT
+            $('#demoForm').on('submit', function (e) {
                 e.preventDefault();
 
-                // Show success message
-                successMsg.classList.add("active");
+                $('#successMsg').addClass('active');
+                this.reset();
 
-                // Reset form
-                form.reset();
-
-                // Optional: auto close popup after 2 sec
-                setTimeout(() => {
-                    successMsg.classList.remove("active");
-                    document.getElementById("demoPopup").classList.remove("active");
-                    document.getElementById("demoOverlay").classList.remove("active");
+                setTimeout(function () {
+                    $('#successMsg').removeClass('active');
+                    closePopup();
                 }, 5000);
             });
+        })
+        document.addEventListener("DOMContentLoaded", function () {
 
             const contactform = document.getElementById("contactForm");
             const contactmsg = document.getElementById("contactSuccess");
