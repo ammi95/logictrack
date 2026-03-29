@@ -141,7 +141,7 @@
                         <input type="email" placeholder="Email Address" required>
                     </div>
 
-                    <input type="text" placeholder="Subject">
+                    <input type="text" placeholder="Subject" required>
 
                     <textarea placeholder="Your Message" required></textarea>
 
@@ -231,14 +231,14 @@
         <form class="demo-form" id="demoForm">
             <input type="text" placeholder="Full Name" required>
             <input type="email" placeholder="Email Address" required>
-            <input type="Number" placeholder="Phone Number">
+            <input type="Number" id="Phone" maxlength="10" placeholder="Phone Number">
 
             <textarea placeholder="Your Message"></textarea>
 
             <button type="submit">Request Demo</button>
 
             <div class="success-message" id="successMsg">
-                ✅ request submitted successfully!
+                ✅ Your request has been submitted successfully.
             </div>
         </form>
 
@@ -318,7 +318,9 @@
                 });
             }
         });
-
+        document.getElementById("phone").addEventListener("input", function () {
+            this.value = this.value.replace(/[^0-9]/g, "");
+        });
     </script>
 </body>
 
